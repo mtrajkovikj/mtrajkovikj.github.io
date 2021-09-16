@@ -1,0 +1,447 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+
+html {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 1.25em; /* 20/16 = 1.25*/
+  line-height: 1.2em /* 24 / 20 = 1.2em */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center; /* 83 / 20 = 4.15em */
+  padding-left: 1.5em;
+  padding-top: 2em;
+  font-size: 1.75em; /* 35 / 20 = 1.75em */
+  font-weight: 600;
+  color: #C6263D;
+  opacity: 0.9;
+}
+
+.chicago {
+  position: relative;
+}
+
+.chicago-background {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.iit-logo {
+  width: 50%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 3.75em; /* 75 / 20 = 3.75em */
+  left: 8.5em; /*170 / 20 = 8.5em */
+}
+
+/*  ==================================
+            BEGIN Finance Page
+    ==================================  */
+
+#content {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 0.9em; /*18 / 20 = 0.9 */
+  line-height: 1.27778em; /*23 / 20 = 1.277*/
+}
+
+section {
+  position: relative;
+}
+
+.main-content > ol {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav > ul > li {
+  border-bottom: 0.05em dashed;
+  position: relative;
+}
+
+.main-content > ol > li {
+  flex: 0 1 45%;
+  padding: 0;
+}
+
+input[type="checkbox"] {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+
+.title-label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  padding-left: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.subprimary-content {
+  font-weight: bold;
+}
+
+.title-label:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0.5em;
+  border-left: 0.4em solid black;
+  border-top: 0.4em solid transparent;
+  border-bottom: 0.4em solid transparent;
+  margin-top: 0.2em;
+}
+
+input[type="checkbox"]:checked ~ h3 label:before {
+  border-left: 0.5em solid transparent;
+  border-top: 0.5em solid black;
+  border-right: 0.5em solid transparent;
+  margin-left: -0.25em;
+  margin-top: 0.2em;
+}
+
+.content-title {
+  max-height: 0;
+  display: none;
+}
+
+.main-content ol {
+  background: rgb(242, 242, 242);
+}
+
+input[type="checkbox"]:checked ~ h3 ~ ol li {
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  display: block;
+  max-height: 10em;
+}
+
+h3 .title-label {
+  box-shadow: 0 0.05em 0.15em rgba(0,0,0,0.25);
+  background: #f7f7f7;
+}
+
+/* End of Finanace page */
+
+/* ==================================
+           BEGIN Login Page
+  ================================== */
+
+
+#IITLogin {
+  padding-left: 5em;
+  padding-bottom: 2.1em;
+  margin: 0 auto;
+  width: 15em;
+}
+
+#username {
+  padding-top: 2.5em;
+  padding-bottom: 1.75em;
+}
+
+#name-field {
+  height: 2.2em;
+  width: 18em;
+  border: 0.3em solid #A9A9A9;
+  padding: 0.4em 0.7em;
+  border-radius: 0.6em;
+}
+
+#password {
+  padding-bottom: 1.15em;
+}
+
+#password-field {
+  height: 2.2em;
+  width: 18em;
+  border: 0.3em solid #A9A9A9;
+  padding: 0.4em 0.7em;
+  border-radius: 0.6em;
+}
+
+#submit {
+  padding-left: 4.4em;
+}
+
+#submit-button {
+  height: 2.4em;
+  width: 2.4em;
+  opacity: 0.8;
+  padding: 0.4em 0.7em;
+  background-color: #FFFFFF;
+}
+
+.social-media {
+  text-align: center;
+  width: 10em;
+  height: auto;
+  padding-left: 5em;
+}
+
+.social-media-icons {
+  margin: 0 auto;
+  width: 18em;
+  padding-bottom: 0.75em;
+}
+
+.login-links {
+  display: inline-flex;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 0.75em;
+  font-weight: lighter;
+  background-color: #C6263D;
+  opacity: 0.9;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.social-media-icons-finance {
+  margin: 0 auto;
+  width: 18em;
+  padding-top: 5.5em;
+  padding-bottom: 0.75em;
+}
+
+.login-links-finance {
+  display: inline-flex;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 0.75em;
+  font-weight: lighter;
+  background-color: #C6263D;
+  opacity: 0.9;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.social-media-icons-welcome {
+  margin: 0 auto;
+  width: 18em;
+  padding-top: 22.5em;
+  padding-bottom: 0.75em;
+}
+
+.login-links-welcome {
+  display: inline-flex;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 0.75em;
+  font-weight: lighter;
+  background-color: #C6263D;
+  opacity: 0.9;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.alert {
+  padding-left: 2.25em;
+  color: white;
+  margin: 0 auto;
+}
+
+.help {
+  margin: 0 auto;
+}
+
+.policy {
+  margin: 0 auto;
+}
+
+.submit-label {
+  padding-left: 4.3em;
+  color: #45A148;
+  opacity: 0.8;
+  font-size: 1em;
+}
+
+/* END login page */
+
+/* WELCOME PAGE */
+
+header {
+  background-color: #C6263D;
+  border-bottom: 0.05em solid;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  box-sizing: border-box;
+}
+
+header > div#logo {
+  line-height: 3em;
+  position: relative;
+}
+
+header > div#logo > h2 {
+  color: #FFFFFF;
+}
+
+header > div#logo > div#navigation-toggle {
+  background-color: #a51d30;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+header nav > ul > li > a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  padding: 1.5em 0;
+}
+
+header > nav > ul > li > nav > ul > li > a {
+  color: #FFFFFF;
+}
+
+header > nav > ul > li > nav > ul > li:hover > a {
+  background-color: #C90909;
+}
+
+header > div#logo > div#navigation-toggle > a {
+  color: #FFFFFF;
+  font-size: 0.85em;
+  text-decoration: none;
+  padding: 0 3em;
+  display: block;
+}
+
+header > nav {
+  background-color: #C90909;
+  display: none;
+  flex: 1;
+}
+
+header nav > ul {
+  list-style-type: none;
+}
+
+header nav > ul > li > a span.toggle {
+  color: #FFFFFF;
+  text-transform: lowercase;
+  font-size: 0.5em;
+  background-color: #990000;
+  border-radius: 3em;
+  padding: 0.1em 0.3em;
+}
+
+header > nav > ul > li > nav {
+  position: absolute;
+  background-color: #C90909;
+  border-radius: 2em;
+  display: none;
+  overflow: hidden;
+}
+
+/* END WELCOME PAGE*/
+
+
+/* ===== STATE STYLES ===== */
+
+/* 775 @ 20px/em */
+@media screen and (min-width: 38.75em) {
+  #page {
+    margin: 0 25.42857143% 0 14.28571429%;
+  }
+}
+
+@media screen and (min-width: 21.81em) {
+  #Mac {
+    display: inline;
+    padding-left: 2em;
+  }
+}
+
+@media all and (min-width: 37.5em) {
+  header > div#logo > div#navigation-toggle {
+    display: none;
+  }
+
+  header {
+    background-color: #C6263D;
+    flex-direction: row;
+    line-height: 3em;
+    padding: 0 1em;
+    position: fixed;
+    text-align: left;
+    width: 100%;
+  }
+
+  header > div#logo {
+    background-color: #C6263D;
+    line-height: 3em;
+  }
+
+  header > div#logo > h2 {
+    color: #FFFFFF;
+  }
+
+  header > nav {
+    background-color: #C6263D;
+    display: block;
+
+  }
+
+  header nav > ul > li {
+    border-bottom: none;
+  }
+
+  header > nav > ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+
+  header nav > ul > li > a {
+    padding: 0 1.25em;
+  }
+
+  header nav > ul > li > a span.toggle {
+    display: none;
+  }
+
+  header > nav > ul > li:hover > nav {
+    background-color: #8A0000;
+    display: block;
+    border-radius: 0.2em;
+    line-height: 2.5em;
+    right: -40%;
+    width: 12em;
+  }
+
+  header nav > ul > li > a span.caret {
+    border-bottom: 0.15em solid transparent;
+    border-top: 0.15em solid;
+    border-right: 0.15em solid transparent;
+    border-left: 0.15em solid transparent;
+    border-radius: 0.05em;
+    display: inline-block;
+    margin: 0 0 0 0.2em;
+  }
+}
